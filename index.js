@@ -38,14 +38,10 @@ function playRound(playerSelection,computerSelection){
     }
 }
 
-
-
-
-
 function game(){
     for(let i = 0; i < 5; i++){
         const computerSelection = getComputerChoice();
-        const playerSelection = prompt("Choose rock, paper or scissors", "rock, paper or scissors").toLowerCase();
+        // const playerSelection = prompt("Choose rock, paper or scissors", "rock, paper or scissors").toLowerCase();
         console.log(playRound(playerSelection, computerSelection));
     }
     if (playerScore > computerScore){
