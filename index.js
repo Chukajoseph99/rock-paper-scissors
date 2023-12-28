@@ -16,7 +16,6 @@ function getComputerChoice(){
     return choice;
 }
 
-
 // we'll use an if else statement to return who wins the round, we'll also account for ties. hope you didnt forget this &&
 function playRound(playerSelection,computerSelection){
     // console.log((playerSelection, computerSelection));
