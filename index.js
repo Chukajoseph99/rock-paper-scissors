@@ -16,9 +16,7 @@ function getComputerChoice(){
     return choice;
 }
 
-// we'll use an if else statement to return who wins the round, we'll also account for ties. hope you didnt forget this &&
 function playRound(playerSelection,computerSelection){
-    // console.log((playerSelection, computerSelection));
     const p = document.createElement("p");
     p.style.cssText = ("text-align: center; font-size: 17px;")
     if (playerSelection === "rock" && computerSelection === "rock"){    
@@ -63,19 +61,6 @@ compScore.textContent = "Computer: " +computerScore;
 }
 
 function game(){
-    // for(let i = 0; i < 5; i++){
-    //     const computerSelection = getComputerChoice();
-    //     const playerSelection = prompt("Choose rock, paper or scissors", "rock, paper or scissors").toLowerCase();
-    //     console.log(playRound(playerSelection, computerSelection));
-    // }
-
-    // if (playerScore > computerScore){
-    //     return "You Win!";
-    // }else if(computerScore > playerScore){
-    //     return "Computer Wins";
-    // }else{
-    //     return "Its a tie";
-    // }
     if(playerScore === 5){
         headerOne.textContent = "You have Won the game! Hurray!" ;
         displayOutcome.append(headerOne);
@@ -85,8 +70,6 @@ function game(){
     }
 
 }
-
-// console.log(game());
 
 rockButton.addEventListener("click", () => {
     const computerSelection = getComputerChoice();

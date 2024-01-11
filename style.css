@@ -70,3 +70,14 @@ h3{
     border-top: ridge #cccccc .5px;
     margin-top: 60px;
 } */
+
+@media (max-width:600px){
+
+    .button-group{
+        gap: 50px;  
+    }
+
+    .score-board{
+        gap: 50px;
+    }
+}
